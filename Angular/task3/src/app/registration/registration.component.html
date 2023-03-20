@@ -1,0 +1,9 @@
+<div  class="w-50 mx-auto">
+   
+      <input type="text" placeholder="name " class="form-control my-4" [(ngModel)]="name">
+        <p *ngIf=" !(name.length > 3)" class="my-4 text-danger">entar VAlid Name</p>
+      <input type="number" placeholder="Age " class="form-control my-4" [(ngModel)]="age">
+      <p *ngIf=" !(age > 20 && age <40)" class="my-4 text-danger">entar VAlid age</p>
+ 
+    <button type="submit" class="btn btn-primary" (click)="add()">Add</button>
+  </div>

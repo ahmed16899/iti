@@ -1,0 +1,29 @@
+<table class="table w-50 mx-auto my-5">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Address</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let emp of allData">
+        <td>{{emp.name}}</td>
+        <td>{{emp.age}}</td>
+        <td>{{emp.email}}</td>
+        <td>{{emp.phone}}</td>
+        <td>{{emp.salary}}</td>
+        <td>{{emp.address}}</td>
+        <td><a class="btn btn-primary" [routerLink]="['update',emp.id]">Update</a></td>
+        <td><button class="btn btn-danger" (click)="deleteDataa(emp.id)">Delete</button></td>
+       
+      </tr>
+    </tbody>
+  </table>

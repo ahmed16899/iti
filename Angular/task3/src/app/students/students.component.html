@@ -1,0 +1,15 @@
+<table class="table w-50 mx-auto">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentsFromParent">
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+      </tr>
+
+    </tbody>
+  </table>
